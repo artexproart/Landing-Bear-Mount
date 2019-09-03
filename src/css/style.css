@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1180px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .section {
@@ -19,19 +20,10 @@ body {
 
 .section-title {
   font-family: 'Rubik', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 48px;
   line-height: 45px;
   text-align: center;
-  max-width: 800px;
-}
-
-.input {
-  border: 1px solid red;
-  padding: 24px 26px;
-  font-size: 15px;
-  border-radius: 10px;
-  outline: none;
 }
 
 .button {
@@ -221,6 +213,15 @@ body {
   margin: auto;
 }
 
+.offer {
+  background-image: url(../img/bcg/bcg-orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat-x: repeat;
+  max-width: 1920px;
+  margin: auto;
+}
+
 .hero-title {
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.94);
@@ -297,11 +298,102 @@ body {
   font-size: 36px;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 500px) {
   .menu-subtitle {
     font-size: 30px;
   }
+}
+
+.offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-sale__title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.offer-sale__subtitle {
+  font-size: 36px;
+}
+
+.offer-sale__text {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  color: #ffffff;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+
+.offer-sale__description {
+  font-size: 36px;
+  letter-spacing: -1.8px;
+  color: #ffffff;
+  margin: 15px 0;
+}
+
+.offer-sale__counter {
+  padding-top: 120px;
+}
+
+.offer-girl {
+  position: absolute;
+  left: 50%;
+  margin-left: -10%;
+  margin-top: -30px;
+  max-width: 420px;
+}
+
+.offer-girl__image {
+  width: 100%;
+}
+
+.offer-form {
+  text-align: right;
+}
+
+.offer-form__title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: right;
+  margin: 15px 0;
+}
+
+.offer-form__subtitle {
+  font-size: 36px;
+  text-align: right;
+}
+
+.offer-form__contact {
+  padding-top: 50px;
+}
+
+.offer__input {
+  width: 270px;
+  height: 60px;
+  border-radius: 73px;
+  background-color: #ffffff;
+  outline: none;
+  border-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  color: #c9c7c711;
+}
+
+.offer-button {
+  padding-top: 100px;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
