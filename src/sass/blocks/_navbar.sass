@@ -1,7 +1,8 @@
 .navbar
     display: flex
     justify-content: space-between
-    padding-top: 50px
+    align-items: center
+    padding: 20px 0
     &-logo
         width: 152px
         height: 100px
@@ -9,7 +10,57 @@
             height: 100%
     &-info
         display: flex
+        align-items: center
         &__text
-            +reg 
+            +medium 
             font-size: 18px
+            line-height: 25px
+.map 
+    display: flex
+    align-items: center 
+.map p 
+    width: 250px
+    margin-left: 20px
+.tel 
+    display: flex
+    align-items: center
+    &__link  
+        display: flex
+        flex-direction: column
+        margin-left: 20px
+        &s
+            padding: 4px 0px
+            +medium
+@media (max-width: 1200px)
+    .navbar
+        &-info
+            flex-direction: column
+            align-items: baseline
+            max-width: 240px
+            &__text
+                margin: 2px
+                font-size: 14px
+                line-height: 20px
+    .map
+        padding-bottom: 5px
+    .map p 
+        margin-left: 30px
+    .tel
+        &__link
+            &s 
+                padding: 2px 0
+                +medium
+                font-size: 14px
+@media (max-width: 768px)
+    .navbar
+        &-info
+            display: none 
+
+@media (max-width: 500px)
+    .navbar
+        flex-direction: column
+        height: 220px
+
+// @media (max-width: 320px)
+
 

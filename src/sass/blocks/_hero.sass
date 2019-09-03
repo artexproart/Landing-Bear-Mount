@@ -1,16 +1,44 @@
 .hero
     &-title
         text-align: center
-        padding-top: 20px
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.94)
         color: #ffffff
-        // font-family: Rubik
         +medium
         font-size: 30px
         font-weight: 500
         line-height: 37px
+        padding: 20px
+        margin: 0
     &-slider
         margin: auto
         max-width: 1140px
         &__img
             width: 100%
+@media (max-width: 1200px)
+    .hero
+        min-height: 600px
+        &-title
+            max-width: 864px
+            margin: auto
+            font-size: 26px
+        
+@media (max-width: 768px)
+    .hero
+        min-height: 550px
+        &-title
+            max-width: 680px
+            font-size: 24px
+@media (max-width: 600px)
+    .hero
+        min-height: 500px
+@media (max-width: 500px)
+    .hero
+        min-height: 450px
+        &-title
+            max-width: 400px
+            font-size: 22px
+            line-height: 30px
+@media (max-width: 320px)
+    .hero
+        min-height: 380px
+        
