@@ -1,4 +1,12 @@
 .offer
+    &::before
+        content: url(../img/offer/offer-girl.png)        
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: -15px
+        max-width: 404px
+        max-height: 436px
     &-wrap
         display: flex
         justify-content: space-between
@@ -22,6 +30,9 @@
             margin: 15px 0
         &__counter
             padding-top: 120px
+            width: 380px
+            height: 100px
+            // margin-left: -40px
     &-girl
         position: absolute
         left: 50% 
@@ -48,7 +59,8 @@
         border-radius: 73px
         background-color: #ffffff
         outline: none
-        border-color: #ffffff
+        border: none
+        outline: none
         text-align: center
         font-size: 18px
         color: #c9c7c711

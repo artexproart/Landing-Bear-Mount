@@ -222,6 +222,14 @@ body {
   margin: auto;
 }
 
+.steps {
+  background-image: url(../img/steps/bcg-work.jpg);
+  max-width: 1920px;
+  min-height: 800px;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
 .hero-title {
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.94);
@@ -307,6 +315,17 @@ body {
   }
 }
 
+.offer::before {
+  content: url(../img/offer/offer-girl.png);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -15px;
+  max-width: 404px;
+  max-height: 436px;
+}
+
 .offer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,6 +364,8 @@ body {
 
 .offer-sale__counter {
   padding-top: 120px;
+  width: 380px;
+  height: 100px;
 }
 
 .offer-girl {
@@ -386,7 +407,8 @@ body {
   border-radius: 73px;
   background-color: #ffffff;
   outline: none;
-  border-color: #ffffff;
+  border: none;
+  outline: none;
   text-align: center;
   font-size: 18px;
   color: #c9c7c711;
@@ -395,5 +417,90 @@ body {
 .offer-button {
   padding-top: 100px;
   text-align: right;
+}
+
+.about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+.adout-card {
+  width: 214px;
+  height: 243px;
+  text-align: center;
+  -webkit-box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58);
+          box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58);
+  border-radius: 20px;
+  border: 1px solid #a5a19b11;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-top: 40px;
+}
+
+.adout-card:hover {
+  -webkit-box-shadow: 0 10px 38px rgba(62, 126, 241, 0.14);
+          box-shadow: 0 10px 38px rgba(62, 126, 241, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.adout-card::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3e7ef1;
+  opacity: 0.05;
+}
+
+.adout-card::after {
+  content: '\003E';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -10px;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.adout-card:hover:before, .adout-card:hover:after {
+  opacity: 1;
+}
+
+.adout-card__icon {
+  max-width: 100px;
+  max-height: 100px;
+  padding-top: 15px;
+}
+
+.adout-card__text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.steps-block {
+  max-width: 50%;
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
