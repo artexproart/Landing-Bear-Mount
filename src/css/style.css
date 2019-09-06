@@ -16,7 +16,7 @@ body {
 }
 
 .section {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 20px;
 }
 
@@ -68,10 +68,16 @@ body {
   font-size: 24px;
   color: #ffffff;
   outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdc173), color-stop(46%, #ec9e43), color-stop(77%, #db7f3b), to(#ce712c));
+  background-image: linear-gradient(to bottom, #fdc173 0%, #ec9e43 46%, #db7f3b 77%, #ce712c 100%);
 }
 
 a {
@@ -239,7 +245,7 @@ body {
 }
 
 .hero {
-  background-image: url(../img/bcg/bcg-header.jpg);
+  background-image: url(../img/bcg/bcg-header-3.jpg);
   max-width: 1920px;
   min-height: 800px;
   margin: auto;
@@ -277,6 +283,7 @@ body {
   line-height: 37px;
   padding: 20px;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 .hero-slider {
@@ -376,6 +383,10 @@ body {
           justify-content: space-between;
 }
 
+.offer-sale {
+  z-index: 1;
+}
+
 .offer-sale__title {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -412,6 +423,7 @@ body {
 }
 
 .offer-girl {
+  z-index: 0;
   position: absolute;
   left: 50%;
   margin-left: -10%;
@@ -424,6 +436,7 @@ body {
 }
 
 .offer-form {
+  z-index: 1;
   text-align: right;
 }
 
@@ -464,12 +477,6 @@ body {
 }
 
 .about-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 150px;
 }
@@ -481,13 +488,14 @@ body {
   -webkit-box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58);
           box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58);
   border-radius: 20px;
-  border: 1px solid #a5a19b11;
+  border: 1px solid #a5a19b2f;
   background-color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
   padding-top: 40px;
+  margin: 0px 10px;
 }
 
 .about-card:hover {
@@ -507,7 +515,8 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: #3e7ef1;
-  opacity: 0.05;
+  opacity: 0;
+  z-index: 100;
 }
 
 .about-card::after {
@@ -527,7 +536,8 @@ body {
 
 .about-card__icon {
   max-width: 100px;
-  max-height: 100px;
+  max-height: 80px;
+  margin: auto;
 }
 
 .about-card__text {
@@ -535,6 +545,7 @@ body {
   font-weight: 500;
   color: #333333e0;
   font-size: 18px;
+  margin-top: 50px;
 }
 
 .wrap {
@@ -557,6 +568,7 @@ body {
           justify-content: flex-start;
   width: 860px;
   left: 345px;
+  margin-top: 130px;
 }
 
 .step-text_desc {
@@ -580,13 +592,8 @@ body {
 }
 
 .steps__title {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  color: #333333e0;
-  font-size: 48px;
-  margin: 20px 0;
-  margin-left: 100px;
-  padding-top: 85px;
+  margin-top: -50px;
+  padding-bottom: 50px;
 }
 
 .step__row {
@@ -600,11 +607,11 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .step__row:nth-child(1) .step-text {
-  margin-right: 68px;
+  margin-right: 58px;
 }
 
 .step__row:nth-child(2) .step-text {
@@ -612,15 +619,15 @@ body {
 }
 
 .step__row:nth-child(3) .step-text {
-  margin-right: 48px;
+  margin-right: 56px;
 }
 
 .step__row:nth-child(4) .step-text {
-  margin-right: 68px;
+  margin-right: 53px;
 }
 
 .step__row:nth-child(5) .step-text {
-  margin-right: 66px;
+  margin-right: 73px;
 }
 
 .step__row:nth-child(5) .img_wrap::before {
@@ -665,23 +672,20 @@ body {
   padding-bottom: 60px;
 }
 
-.customers-block__brand {
+.customers-block {
   height: 60px;
 }
 
-.restaurant-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 50px;
+.customers-block__brand {
+  height: 100%;
 }
 
 .restaurant-block {
   padding: 5px 0;
+}
+
+.restaurant-title {
+  padding-bottom: 40px;
 }
 
 .discount-wrap {
@@ -783,7 +787,7 @@ body {
 .footer {
   height: 200px;
   background-color: #363332;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
 .footer-wrap {

@@ -1,6 +1,4 @@
 .about-wrap
-    display: flex
-    justify-content: space-between
     padding-top: 50px
     padding-bottom: 150px
 .about-card
@@ -9,11 +7,12 @@
     text-align: center
     box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58)
     border-radius: 20px
-    border: 1px solid #a5a19b11
+    border: 1px solid #a5a19b2f
     background-color: #ffffff
     align-items: center
     position: relative
     padding-top: 40px
+    margin: 0px 10px
     &:hover
         box-shadow: 0 10px 38px rgba(62, 126, 241, 0.14)
         border: 1px solid rgba(0, 0, 0, 0.02)
@@ -28,7 +27,8 @@
         border-radius: 50%
             // background: url(../img/services/step.png)
         background-color: #3e7ef1
-        opacity: 0.05
+        opacity: 0
+        z-index: 100
     &::after 
         content: '\003E'
         position: absolute
@@ -42,7 +42,9 @@
             opacity: 1
     &__icon 
         max-width: 100px
-        max-height: 100px
+        max-height: 80px
+        margin: auto
     &__text
         +medium
         font-size: 18px
+        margin-top: 50px

@@ -8,6 +8,9 @@
     <title>Ресторан Медвежья гора</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,23 +35,26 @@
             </div>
         </div>
         <div class="navbar-botton">
-            <button class="button">Заказать звонок</button>
+            <button class="button wow heartBeat">Заказать звонок</button>
         </div>
     </div>
     <!-- навбар -->
     <div class="hero">
-        <h1 class="hero-title">Озганизация Корпоративов,<br> Банкетов, Свадеб, Тимбилдингов и Дей Рождений.</h1>
+        <h1 class="hero-title">Организация Корпоративов,<br> Банкетов, Свадеб, Тимбилдингов и Дней Рождений.</h1>
         <div class="container">
             <div class="slider hero-slider">
                 <!-- <img src="img/slider/hero1.jpg" class="hero-slider__img" alt="img"> -->
-                <img src="img/slider/heappy-1200.jpg" class="hero-slider__img" alt="img">
+                <img src="img/slider/heppy1-1200.jpg" class="hero-slider__img" alt="Новогодние корпоративы">
+                <img src="img/slider/heppy2-1200.jpg" class="hero-slider__img" alt="Новогодние корпоративы">
+                <img src="img/slider/heppy3-1200.jpg" class="hero-slider__img" alt="Новогодние корпоративы">
+                <img src="img/slider/heppy4-1200.jpg" class="hero-slider__img" alt="Новогодние корпоративы">
             </div>
         </div>
     </div>
     <!-- главный экран -->
     <div class="container menu">
         <button class="button menu-button">Банкетное меню</button>
-        <h3 class="menu-subtitle">от 2.000 рублей</h3>
+        <h3 class="menu-subtitle wow heartBeat">от 2.000 рублей</h3>
     </div>
     <!-- /.section container menu-->
     <div class="offer">
@@ -96,25 +102,47 @@
         <div class="container">
             <h2 class="section-title">Почему мы</h2>
             <div class="about-wrap">
-                <div class="about-card">
-                    <img src="img/about/5ic.svg" class="about-card__icon" alt="услуги">
-                    <p class="about-card__text">Welcome<br>зона</p>
-                </div>
-                <div class="about-card">
-                    <img src="img/about/7ic.svg" class="about-card__icon" alt="услуги">
-                    <p class="about-card__text">Аккустическая<br>система</p>
-                </div>
-                <div class="about-card">
-                    <img src="img/about/3ic.svg" class="about-card__icon" alt="услуги">
-                    <p class="about-card__text">Сцена для<br>выступления</p>
-                </div>
-                <div class="about-card">
-                    <img src="img/about/ic_bankety.png" class="about-card__icon" alt="услуги">
-                    <p class="about-card__text">Посадка<br>на 130 человек</p>
-                </div>
-                <div class="about-card">
-                    <img src="img/about/19ic.svg" class="about-card__icon" alt="услуги">
-                    <p class="about-card__text">Продукты<br>с собственной<br>фермы</p>
+                <div class="about-slider">
+                    <div class="about-card">
+                        <img src="img/about/5ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Welcome<br>зона</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/7ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Аккустическая<br>система</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/3ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Сцена для<br>выступления</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/ic_bankety.png" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Посадка<br>на 130 человек</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/19ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Продукты<br>с собственной<br>фермы</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/5ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Welcome<br>зона</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/7ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Аккустическая<br>система</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/3ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Сцена для<br>выступления</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/ic_bankety.png" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Посадка<br>на 130 человек</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="img/about/19ic.svg" class="about-card__icon" alt="услуги">
+                        <p class="about-card__text">Продукты<br>с собственной<br>фермы</p>
+                    </div>
                 </div>
             </div>
             <!-- /.about-wrap -->
@@ -122,10 +150,13 @@
         <!-- /.container -->
     </section>
     <!-- /.section about -->
+    <div class="container">
+        <h2 class="section-title steps__title">Как мы работаем</h2>
+    </div>
     <section class="section steps">
         <!-- <h2 class="section-title steps__title">Как мы работаем</h2> -->
         <div class="steps-wrap">
-            <span class="steps__title">Как мы работаем</span>
+            <!-- <span class="steps__title">Как мы работаем</span> -->
             <div class="step__row">
                 <p class="step-text">Сейчас</p>
                 <div class="img_wrap">
@@ -177,26 +208,34 @@
     <div class="container customers">
         <h2 class="section-title">Наши клиенты</h2>
         <!-- /.section-title -->
-        <div class="customers-wrap">
-            <div class="customers-block"><img src="img/customers/Levsha_logo_Company.png" alt="Brand"
-                    class="customers-block__brand"></div>
-            <div class="customers-block"><img src="img/customers/airgun.png" alt="Brand" class="customers-block__brand">
+        <div class="customers-wrap customers-slider">
+            <div class="customers-block">
+                <img src="img/customers/Levsha_logo_Company.png" alt="Brand" class="customers-block__brand">
             </div>
-            <div class="customers-block"><img src="img/customers/autoliga.png" alt="Brand"
-                    class="customers-block__brand"></div>
-            <div class="customers-block"><img src="img/customers/centrobalt.jpg" alt="Brand"
-                    class="customers-block__brand"></div>
-            <div class="customers-block"><img src="img/customers/imeria.png" alt="Brand" class="customers-block__brand">
+            <div class="customers-block">
+                <img src="img/customers/airgun.png" alt="Brand" class="customers-block__brand">
             </div>
-            <div class="customers-block"><img src="img/customers/logo_fishelandia.png" alt="Brand"
-                    class="customers-block__brand"></div>
-            <div class="customers-block"><img src="img/customers/logo_peterville.png" alt="Brand"
-                    class="customers-block__brand"></div>
-            <div class="customers-block"><img src="img/customers/mag.png" alt="Brand" class="customers-block__brand">
+            <div class="customers-block">
+                <img src="img/customers/autoliga.png" alt="Brand" class="customers-block__brand">
             </div>
-            <div class="customers-block"><img src="img/customers/taifyn.png" alt="Brand" class="customers-block__brand">
+            <div class="customers-block">
+                <img src="img/customers/centrobalt.jpg" alt="Brand" class="customers-block__brand">
             </div>
-
+            <div class="customers-block">
+                <img src="img/customers/imeria.png" alt="Brand" class="customers-block__brand">
+            </div>
+            <div class="customers-block">
+                <img src="img/customers/logo_fishelandia.png" alt="Brand" class="customers-block__brand">
+            </div>
+            <div class="customers-block">
+                <img src="img/customers/mag.png" alt="Brand" class="customers-block__brand">
+            </div>
+            <div class="customers-block">
+                <img src="img/customers/taifyn.png" alt="Brand" class="customers-block__brand">
+            </div>
+            <div class="customers-block">
+                <img src="img/customers/logo_peterville.png" alt="Brand" class="customers-block__brand">
+            </div>
             <!-- /.customer-block -->
         </div>
         <!-- /.customers-wrap -->
@@ -211,7 +250,7 @@
                         <img src="img/discount/rest1.png" alt="Logo" class="discount-brand__logo">
                         <p class="discount-brand__text">При заказе банкета</p>
                         <!-- /.discount-brand__text -->
-                        <h5 class="discount-brand__offer">20% СКИДКА</h5>
+                        <h5 class="discount-brand__offer wow swing">20% СКИДКА</h5>
                         <!-- /.discount-brand__offer -->
                         <p class="discount-brand__text">На проживание</p>
                         <!-- /.discount-brand__text -->
@@ -225,7 +264,7 @@
                 </div>
                 <!-- /.discount-block -->
                 <div class="discount-block discount-block__right"><img src="img/discount/rest2.jpg" alt="Cook"
-                        class="discount-cook"></div>
+                        class="discount-cook wow zoomIn"></div>
                 <!-- /.discount-block -->
             </div>
             <!-- /.discount-wrap -->
@@ -233,8 +272,8 @@
     </section>
     <section class="section restaurant">
         <div class="container">
-            <h2 class="section-title">Наш ресторан</h2>
-            <div class="restaurant-wrap">
+            <h2 class="section-title restaurant-title">Наш ресторан</h2>
+            <div class="restaurant-wrap restaurant-slider wow fadeInUp">
                 <div class="restaurant-block"><img src="img/restaurant/1.jpg" alt="restaurant"
                         class="restaurant-block__img"></div>
                 <div class="restaurant-block"><img src="img/restaurant/2.jpg" alt="restaurant"
@@ -250,6 +289,25 @@
                 <div class="restaurant-block"><img src="img/restaurant/7.jpg" alt="restaurant"
                         class="restaurant-block__img"></div>
                 <div class="restaurant-block"><img src="img/restaurant/8.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <!-- /.restaurant-block -->
+            </div>
+            <div class="restaurant-wrap restaurant-slider wow fadeInUp">
+                <div class="restaurant-block"><img src="img/restaurant/5.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/6.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/7.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/8.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/1.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/2.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/3.jpg" alt="restaurant"
+                        class="restaurant-block__img"></div>
+                <div class="restaurant-block"><img src="img/restaurant/4.jpg" alt="restaurant"
                         class="restaurant-block__img"></div>
                 <!-- /.restaurant-block -->
             </div>
@@ -387,7 +445,7 @@
                         <span class="addres-contact__text">mail@medvezhiagora.ru</span>
                     </div>
                     <div class="addres-contact__img"><img src="img/addres/med.png" alt="bear"
-                            class="addres-contact__bear"></div>
+                            class="addres-contact__bear wow fadeOut"></div>
                 </div>
                 <!-- /.addres-block -->
                 <div class="addres-block addres-block__map">
@@ -423,6 +481,15 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
