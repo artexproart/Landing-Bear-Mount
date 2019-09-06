@@ -42,8 +42,23 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false,
-        // centerMode: true,
-        // centerPadding: '10px'
     });
 
   });
+
+//   responsive: [
+//     {
+//         breakpoint: 1200,
+//         settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1
+//         }
+//     },
+//     {
+//         breakpoint: 768,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//         }
+//     }
+// ]

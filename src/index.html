@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="navbar-botton">
-            <button class="button wow heartBeat">Заказать звонок</button>
+            <button id="button-navbar" class="button wow heartBeat">Заказать звонок</button>
         </div>
     </div>
     <!-- навбар -->
@@ -53,7 +53,7 @@
     </div>
     <!-- главный экран -->
     <div class="container menu">
-        <button class="button menu-button">Банкетное меню</button>
+        <a href="https://medvezhiagora.ru/web/pdf/menuBanket.pdf"><button class="button menu-button">Банкетное меню</button></a>
         <h3 class="menu-subtitle wow heartBeat">от 2.000 рублей</h3>
     </div>
     <!-- /.section container menu-->
@@ -88,7 +88,7 @@
                                 placeholder="Ваш телефон">
                         </div>
                         <div class="offer-form__contact offer-button">
-                            <button class="button offer-form__button">Заказать</button>
+                            <button id="button-offer" class="button offer-form__button">Заказать</button>
                         </div>
                     </form>
                     <!-- /.form offer-form -->
@@ -256,7 +256,7 @@
                         <!-- /.discount-brand__text -->
                         <script src="//megatimer.ru/get/1e6e3880fe0f04231c16e8fa378a0111.js"></script>
                         <div class="discount-brand__clik">
-                            <button class="button">Получите скидку </button>
+                            <button id="button-discount" class="button">Получите скидку </button>
                         </div>
                         <!-- /.button discount-brand__clik -->
                     </div>
@@ -481,14 +481,48 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">&times;</button>
+            <div class="modal-column">
+                <div class="offer-block offer-block__modal offer__mini">
+                    <h2 class="section-title offer__title">
+                        Узнайте точную стоимость!</h2>
+                    <span class="section-subtitle modal-center offer__subtitle">Заполните поля ниже - мы свяжемся с
+                        Вами</span>
+                    <form action="#" id="offer-form__modal" class="form offer__form">
+                        <input type="text" name="username" class="input offer__input username2" placeholder="Ваше имя">
+                        <input type="tel" name="userphone" class="input offer__input phone userphone2"
+                            placeholder="Ваш телефон">
+                        <button class="button offer__button">Узнать стоимость</button>
+                        <span class="offer-subtitle__low">Или Вы можете перезвонить нам сами по телефону:</span>
+                        <span class="offer-subtitle__tel">+7 (812) 408-88-88</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модальное окно modal -->
+    <div class="modalmini" id="modalmini">
+        <div class="modalmini-dialog">
+            <button class="modalmini-dialog__close" id="closemini">&times;</button>
+            <div class="modalmini-column">
+                <div class="offer-block offer-block__modal">
+                    <h2 class="section-title offer__title">Спасибо за ваше обращение</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модальное окно mini -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script>new WOW().init();</script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 
 </body>
 
