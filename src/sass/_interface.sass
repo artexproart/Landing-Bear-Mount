@@ -2,6 +2,7 @@
     box-sizing: border-box
 body
     +reg 
+    
 .container 
     width: 1180px
     margin: auto
@@ -68,7 +69,16 @@ a
         width: 90%
     .section
         padding-top: 50px
-        padding-bottom: 50px 
+        padding-bottom: 50px
+    .section-title
+        &:before
+            display: none,
+        &:after
+            display: none  
+// @media (max-width: 450px)
+//     .section
+//         &-title
+//             font-size: 24px
 @media (max-width: 320px)
     .container
         max-width: 319px

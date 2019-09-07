@@ -15,22 +15,47 @@
         &__tel
             +medium
 
+iframe
+    width: 100%!important 
+    height: 100%!important
+.addres
+    &-block
+        &__map
+            width: 600px
+            height: 450px
+
 @media (max-width: 1200px)
     .addres
         &-block
             &__map
-                max-width: 300px
-                max-height: 300px
+                max-width: 450px
+                max-height: 350px
 @media (max-width: 768px)
     .addres
         &-wrap
-            display: flex
-            justify-content: center
             flex-flow: column-reverse
     .addres
         &-block
             &__map
-                // margin: auto
-                max-width: 200px
+                max-width: 500px
                 max-height: 200px
+                justify-content: center
+@media (max-width: 558px)
+    .addres
+        &-block
+            &__map
+                max-width: 400px
+
+@media (max-width: 450px)
+    .addres
+        &-block
+            &__map
+                max-width: 300px
+        &-contact
+            &__img
+                max-width: 380px
+            &__bear
+                width: 100%
+            &__text
+                font-size: 18px
     

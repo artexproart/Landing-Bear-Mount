@@ -102,6 +102,12 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .section-title:before {
+    display: none;
+  }
+  .section-title:after {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -238,7 +244,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 220px;
+  }
+  .navbar-button {
+    padding-top: 10px;
   }
 }
 
@@ -267,6 +275,10 @@ body {
   min-width: 1401px;
   min-height: 884px;
   margin: auto;
+}
+
+@media (max-width: 1401px) {
+  min-width: 100%;
 }
 
 .customers-wrap {
@@ -364,7 +376,7 @@ body {
 
 @media (max-width: 500px) {
   .menu-subtitle {
-    font-size: 30px;
+    font-size: 48px;
   }
 }
 
@@ -489,44 +501,79 @@ body {
     margin-top: -25px;
   }
   .offer-sale__title {
-    font-size: 24px;
     margin: 15px 0;
     padding-bottom: 25px;
   }
-  .offer-sale__subtitle {
-    font-size: 24px;
-  }
-  .offer-sale__text {
-    font-size: 76px;
-    margin-top: 70px;
-    margin-bottom: 0px;
-  }
   .offer-sale__description {
-    font-size: 36px;
-    letter-spacing: -1.8px;
     margin: 15px 0;
-  }
-  .offer-sale__counter {
-    padding-top: 120px;
-    width: 380px;
-    height: 100px;
   }
   .offer-form {
     margin-top: -25px;
   }
   .offer-form__title {
-    font-size: 24px;
     margin: 15px 0;
     padding-bottom: 25px;
-  }
-  .offer-form__subtitle {
-    font-size: 24px;
   }
   .offer-form__contact {
     padding-top: 50px;
   }
   .offer-form__button {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .offer {
+    background-position-y: 500px;
+  }
+  .offer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-sale {
+    text-align: center;
+  }
+  .offer-sale__title {
+    padding-bottom: 5px;
+  }
+  .offer-sale__text, .offer-sale__description {
+    color: #292929e3;
+    margin-top: 10px;
+  }
+  .offer-sale__counter {
+    padding-top: 20px;
+    width: 400px;
+    margin: auto;
+  }
+  .offer-form {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .offer-form__title {
+    text-align: center;
+  }
+  .offer-button {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .offer {
+    background-position-y: 540px;
+  }
+}
+
+@media (max-width: 400px) {
+  .offer {
+    background-position-y: 630px;
+  }
+  .offer-sale__counter {
+    width: 280px;
+  }
+  .offer-form {
+    margin-top: 70px;
   }
 }
 
@@ -752,6 +799,12 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 1200px) {
+  .customers {
+    padding-top: 0;
+  }
+}
+
 .restaurant-block {
   padding: 5px 0;
   outline: none;
@@ -826,6 +879,18 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .discount-drand__wrapper {
+    display: none;
+  }
+  .discount .discount-brand__offer {
+    font-size: 36px;
+  }
+  .discount-button {
+    margin-top: 100px;
+  }
+}
+
 .hotel-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,29 +957,57 @@ body {
   color: #333333e0;
 }
 
+iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.addres-block__map {
+  width: 600px;
+  height: 450px;
+}
+
 @media (max-width: 1200px) {
   .addres-block__map {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 450px;
+    max-height: 350px;
   }
 }
 
 @media (max-width: 768px) {
   .addres-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-flow: column-reverse;
             flex-flow: column-reverse;
   }
   .addres-block__map {
-    max-width: 200px;
+    max-width: 500px;
     max-height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 558px) {
+  .addres-block__map {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .addres-block__map {
+    max-width: 300px;
+  }
+  .addres-contact__img {
+    max-width: 380px;
+  }
+  .addres-contact__bear {
+    width: 100%;
+  }
+  .addres-contact__text {
+    font-size: 18px;
   }
 }
 
@@ -946,6 +1039,25 @@ body {
   padding: 0 10px;
   max-width: 71px;
   max-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 100%;
+  }
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-brand {
+    padding-bottom: 20px;
+  }
+  .footer-brand__text {
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 
 .modal {
