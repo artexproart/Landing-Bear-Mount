@@ -115,18 +115,29 @@
                 text-align: center
         &-button
             text-align: center 
+@media (max-width: 480px)
+    .offer
+        background-position-y: 535px
 @media (max-width: 450px)
     .offer
-        background-position-y: 540px
-
-@media (max-width: 400px)
-    .offer
-        background-position-y: 630px
+        background-position-y: 440px
         &-sale
-            &__counter
-                width: 280px
+            &__counter 
+                display: none
+@media (max-width: 410px)
+    .offer
+        background-position-y: 480px
+@media (max-width: 40px)
+    .offer
+        background-position-y: 500px
+        &-sale
+            &__text
+                font-size: 48px
         &-form
             margin-top: 70px
+@media (max-width: 370px)
+    .offer
+        background-position-y: 520px
 
 
             
