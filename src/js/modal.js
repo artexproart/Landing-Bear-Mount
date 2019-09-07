@@ -1,12 +1,14 @@
 $(document).ready(function () {
     var buttonNav = $('#button-navbar');
     var buttonDiscount = $('#button-discount');
+    var buttonOffer = $('#button-offer');
     var modal = $('#modal');
     var close = $('#close');
 
     buttonNav.on('click', function () {
         modal.addClass('modal_active');
     });
+
     buttonDiscount.on('click', function () {
         modal.addClass('modal_active');
     });
@@ -37,3 +39,4 @@ $(document).ready(function () {
         modal.removeClass('modalmini_active');
     });
 }); 
+

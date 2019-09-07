@@ -53,7 +53,8 @@
     </div>
     <!-- главный экран -->
     <div class="container menu">
-        <a href="https://medvezhiagora.ru/web/pdf/menuBanket.pdf"><button class="button menu-button">Банкетное меню</button></a>
+        <a href="https://medvezhiagora.ru/web/pdf/menuBanket.pdf"><button class="button menu-button">Банкетное
+                меню</button></a>
         <h3 class="menu-subtitle wow heartBeat">от 2.000 рублей</h3>
     </div>
     <!-- /.section container menu-->
@@ -80,12 +81,12 @@
                     <h4 class="offer-form__title">Прямо сейчас!</h4>
                     <form action="#" id="offer-form__sale" class="form action success">
                         <div class="offer-form__contact offer-name">
-                            <input type="text" name="username" class="offer__input offer-name__input username1"
-                                placeholder="Ваше имя">
+                            <input type="text" name="username" requared
+                                class="offer__input offer-name__input input__name" placeholder="Ваше имя">
                         </div>
                         <div class="offer-form__contact offer-tel">
-                            <input type="tel" name="userphone" class="phone offer__input offer-tel__input userphone1"
-                                placeholder="Ваш телефон">
+                            <input type="tel" name="userphone" requared
+                                class="phone offer__input offer-tel__input input__phone" placeholder="Ваш телефон">
                         </div>
                         <div class="offer-form__contact offer-button">
                             <button id="button-offer" class="button offer-form__button">Заказать</button>
@@ -217,15 +218,17 @@
             </div>
             <div class="customers-block">
                 <img src="img/customers/autoliga.png" alt="Brand" class="customers-block__brand">
+
             </div>
             <div class="customers-block">
-                <img src="img/customers/centrobalt.jpg" alt="Brand" class="customers-block__brand">
+                <img src="img/customers/logo_fishelandia.png" alt="Brand" class="customers-block__brand">
+
             </div>
             <div class="customers-block">
                 <img src="img/customers/imeria.png" alt="Brand" class="customers-block__brand">
             </div>
             <div class="customers-block">
-                <img src="img/customers/logo_fishelandia.png" alt="Brand" class="customers-block__brand">
+                <img src="img/customers/centrobalt.jpg" alt="Brand" class="customers-block__brand">
             </div>
             <div class="customers-block">
                 <img src="img/customers/mag.png" alt="Brand" class="customers-block__brand">
@@ -273,7 +276,7 @@
     <section class="section restaurant">
         <div class="container">
             <h2 class="section-title restaurant-title">Наш ресторан</h2>
-            <div class="restaurant-wrap restaurant-slider wow fadeInUp">
+            <div class="restaurant-wrap restaurant-slider restaurant-slider_top wow fadeInUp">
                 <div class="restaurant-block"><img src="img/restaurant/1.jpg" alt="restaurant"
                         class="restaurant-block__img"></div>
                 <div class="restaurant-block"><img src="img/restaurant/2.jpg" alt="restaurant"
@@ -292,7 +295,7 @@
                         class="restaurant-block__img"></div>
                 <!-- /.restaurant-block -->
             </div>
-            <div class="restaurant-wrap restaurant-slider wow fadeInUp">
+            <div class="restaurant-wrap restaurant-slider restaurant-slider_down wow fadeInUp">
                 <div class="restaurant-block"><img src="img/restaurant/5.jpg" alt="restaurant"
                         class="restaurant-block__img"></div>
                 <div class="restaurant-block"><img src="img/restaurant/6.jpg" alt="restaurant"
@@ -449,9 +452,7 @@
                 </div>
                 <!-- /.addres-block -->
                 <div class="addres-block addres-block__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d516264.0858352231!2d34.040659210256514!3d59.638722559199415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JvQtdC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7Liwg0JHQvtC60YHQuNGC0L7Qs9C-0YDRgdC60LjQuSDRgNCw0LnQvtC9LCDQtNC10YAuINCn0YPQtNGB0LrQsNGPLCDQtNC-0LwgMQ!5e0!3m2!1sru!2sru!4v1567705839751!5m2!1sru!2sru"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1028775.3344555781!2d32.36669556997243!3d59.76063582759925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x41264726ad844923%3A0x4233c623a85229a0!2sE105!3m2!1d60.0632034!2d32.3047237!4m5!1s0x46bb4999b753f6d5%3A0x4f6ffdb37d3fd79d!2z0J_QsNGA0Lot0L7RgtC10LvRjCAi0JzQtdC00LLQtdC20YzRjyDQk9C-0YDQsCIsINC0LiAxLCDQp9GD0LTRgdC60LDRjywg0JvQtdC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7LiwgMTg3NjIw!3m2!1d59.573559599999996!2d34.5451093!5e0!3m2!1sru!2sru!4v1567830233286!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
                 <!-- /.addres-block -->
             </div>
@@ -481,6 +482,8 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times;</button>
@@ -489,12 +492,13 @@
                     <h2 class="section-title offer__title">
                         Узнайте точную стоимость!</h2>
                     <span class="section-subtitle modal-center offer__subtitle">Заполните поля ниже - мы свяжемся с
-                        Вами</span>
+                        Вами в самое ближайшее время</span>
                     <form action="#" id="offer-form__modal" class="form offer__form">
-                        <input type="text" name="username" class="input offer__input username2" placeholder="Ваше имя">
-                        <input type="tel" name="userphone" class="input offer__input phone userphone2"
+                        <input type="text" name="username" requared class="input offer__input input-modal input__name"
+                            placeholder="Ваше имя">
+                        <input type="tel" name="userphone" requared class="input offer__input input-modal phone input__phone"
                             placeholder="Ваш телефон">
-                        <button class="button offer__button">Узнать стоимость</button>
+                        <button id="buttonmini" class="button offer__button">Узнать стоимость</button>
                         <span class="offer-subtitle__low">Или Вы можете перезвонить нам сами по телефону:</span>
                         <span class="offer-subtitle__tel">+7 (812) 408-88-88</span>
                     </form>
@@ -508,7 +512,7 @@
             <button class="modalmini-dialog__close" id="closemini">&times;</button>
             <div class="modalmini-column">
                 <div class="offer-block offer-block__modal">
-                    <h2 class="section-title offer__title">Спасибо за ваше обращение</h2>
+                    <h2 class="offer__title">Спасибо за обращение, скоро мы свяжемся с вами</h2>
                 </div>
             </div>
         </div>
@@ -519,10 +523,13 @@
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script src="js/modal.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/valideit.js"></script>
 
 </body>
 

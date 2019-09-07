@@ -10,7 +10,7 @@ $(document).ready(function(){
         prevArrow: false
     });
 
-    $('.restaurant-slider').slick({
+    $('.restaurant-slider_top').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -20,8 +20,31 @@ $(document).ready(function(){
         prevArrow: false,
         centerMode: true,
         centerPadding: '1px',
-        dots: true
+        asNavFor: $('.restaurant-slider_down')
+        
     });
+    $('.restaurant-slider_down').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: false,
+        prevArrow: false,
+        centerMode: true,
+        centerPadding: '1px',
+        dots: true,
+        asNavFor: $('.restaurant-slider_top')
+    });
+    let dots = document.querySelectorAll('.restaurant-slider .slick-dots li button');
+    dots.forEach(function(item){
+        item.textContent = '';
+        console.log(item);
+        return item;
+    });
+
+  
+    
 
     $('.hero-slider').slick({
         infinite: true,
