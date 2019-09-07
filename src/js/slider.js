@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.customers-slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -20,9 +20,35 @@ $(document).ready(function(){
         prevArrow: false,
         centerMode: true,
         centerPadding: '1px',
-        asNavFor: $('.restaurant-slider_down')
-        
+        asNavFor: $('.restaurant-slider_down'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
     });
+
     $('.restaurant-slider_down').slick({
         infinite: true,
         slidesToShow: 4,
@@ -34,17 +60,40 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '1px',
         dots: true,
-        asNavFor: $('.restaurant-slider_top')
+        asNavFor: $('.restaurant-slider_top'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
-    let dots = document.querySelectorAll('.restaurant-slider .slick-dots li button');
-    dots.forEach(function(item){
+
+    var dots = document.querySelectorAll('.restaurant-slider .slick-dots li button');
+    dots.forEach(function (item) {
         item.textContent = '';
         console.log(item);
         return item;
     });
-
-  
-    
 
     $('.hero-slider').slick({
         infinite: true,
@@ -65,23 +114,30 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
-
-  });
-
-//   responsive: [
-//     {
-//         breakpoint: 1200,
-//         settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 1
-//         }
-//     },
-//     {
-//         breakpoint: 768,
-//         settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1
-//         }
-//     }
-// ]
+});

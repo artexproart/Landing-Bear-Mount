@@ -12,7 +12,6 @@ body {
 .container {
   width: 1180px;
   margin: auto;
-  padding: 0 10px;
 }
 
 .section {
@@ -87,7 +86,10 @@ a {
 
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    width: 90%;
+  }
+  .section-title {
+    font-size: 36px;
   }
 }
 
@@ -300,9 +302,12 @@ body {
     min-height: 600px;
   }
   .hero-title {
-    max-width: 864px;
+    max-width: 800px;
     margin: auto;
     font-size: 26px;
+  }
+  .hero-slider {
+    max-width: 800px;
   }
 }
 
@@ -474,6 +479,55 @@ body {
 .offer-button {
   padding-top: 100px;
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .offer::before {
+    display: none;
+  }
+  .offer-sale {
+    margin-top: -25px;
+  }
+  .offer-sale__title {
+    font-size: 24px;
+    margin: 15px 0;
+    padding-bottom: 25px;
+  }
+  .offer-sale__subtitle {
+    font-size: 24px;
+  }
+  .offer-sale__text {
+    font-size: 76px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  .offer-sale__description {
+    font-size: 36px;
+    letter-spacing: -1.8px;
+    margin: 15px 0;
+  }
+  .offer-sale__counter {
+    padding-top: 120px;
+    width: 380px;
+    height: 100px;
+  }
+  .offer-form {
+    margin-top: -25px;
+  }
+  .offer-form__title {
+    font-size: 24px;
+    margin: 15px 0;
+    padding-bottom: 25px;
+  }
+  .offer-form__subtitle {
+    font-size: 24px;
+  }
+  .offer-form__contact {
+    padding-top: 50px;
+  }
+  .offer-form__button {
+    margin-top: 50px;
+  }
 }
 
 .about-wrap {
@@ -660,6 +714,15 @@ body {
   z-index: 100;
 }
 
+@media (max-width: 1200px) {
+  .steps {
+    display: none;
+  }
+  .steps__title {
+    display: none;
+  }
+}
+
 .customers {
   padding-top: 100px;
 }
@@ -748,6 +811,21 @@ body {
   padding: 30px 0;
 }
 
+@media (max-width: 1200px) {
+  .discount-block__right {
+    max-width: 600px;
+  }
+  .discount-block__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .discount-block__right {
+    display: none;
+  }
+}
+
 .hotel-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +890,32 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   color: #333333e0;
+}
+
+@media (max-width: 1200px) {
+  .addres-block__map {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .addres-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  .addres-block__map {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 
 .footer {
@@ -1041,6 +1145,10 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 24px;
+}
+
+.class_close {
+  display: none;
 }
 
 @media (max-width: 768px) {

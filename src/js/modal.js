@@ -17,15 +17,14 @@ $(document).ready(function () {
         modal.removeClass('modal_active');
     });
 
-});  
- 
+});
+
 // всплывающее мини окно
 $(document).ready(function () {
     var button = $('#buttonmini');
     var buttons = $('#buttonsmini');
     var modal = $('#modalmini');
     var close = $('#closemini');
-
 
     button.on('click', function () {
         modal.addClass('modalmini_active');
@@ -38,5 +37,9 @@ $(document).ready(function () {
     close.on('click', function () {
         modal.removeClass('modalmini_active');
     });
-}); 
+
+    $('#closemini').on('click', function () {
+        $('#modalmini').addClass('class_close');
+    });
+});
 
