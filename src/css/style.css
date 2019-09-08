@@ -280,7 +280,7 @@ body {
 
 .customers-wrap {
   background-image: url(../img/bcg/bcg-customers.jpg);
-  background-repeat: no-repeat;
+  background-repeat-y: no-repeat;
   background-position: center center;
   background-repeat-x: repeat;
 }
