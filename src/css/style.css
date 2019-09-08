@@ -1316,4 +1316,40 @@ iframe {
     padding-bottom: 20px;
   }
 }
+
+@media (max-width: 320px) {
+  .modal-dialog {
+    padding: 5px 10px;
+  }
+  .offer__title {
+    padding: 10px 0;
+    margin: 0px;
+    line-height: 22px;
+  }
+  .offer-subtitle {
+    font-size: 16px;
+  }
+  .offer-subtitle__tel {
+    padding-bottom: 20px;
+  }
+  .offer__button {
+    width: 215px;
+    margin: 5px;
+    font-size: 16px;
+  }
+  .offer__input {
+    width: auto;
+  }
+  .modal .offer-subtitle__low {
+    padding-top: 5px;
+  }
+  .modal .offer-subtitle__tel {
+    padding-top: 7px;
+    font-size: 18px;
+  }
+  .modalmini-dialog {
+    margin-top: 30px;
+    padding: 20px 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
