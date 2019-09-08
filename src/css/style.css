@@ -270,7 +270,6 @@ body {
 
 .steps {
   background: url(../img/steps/bcg-steps.jpg) left no-repeat;
-  min-width: 1401px;
   min-height: 884px;
   margin: auto;
 }

@@ -7,7 +7,23 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     $('.restaurant-slider_top').slick({
@@ -95,16 +111,21 @@ $(document).ready(function () {
         return item;
     });
 
-    $('.hero-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        nextArrow: false,
-        prevArrow: false,
-        dots: true
-    });
+    // ---------------------------------//
+
+    // СЛАЙДЕР ДЛЯ ГЛАВНОГО ЭКРАНА hero
+    // $('.hero-slider').slick({
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     nextArrow: false,
+    //     prevArrow: false,
+    //     dots: true
+    // });
+
+    // *********************************//
 
     $('.about-slider').slick({
         infinite: true,
