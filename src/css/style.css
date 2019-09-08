@@ -338,6 +338,7 @@ body {
 
 @media (max-width: 500px) {
   .hero {
+    background-image: url(../img/bcg/bcg-header-mini-3.jpg);
     min-height: 450px;
   }
   .hero-title {
@@ -591,6 +592,7 @@ body {
 
 @media (max-width: 370px) {
   .offer {
+    background-image: url(../img/bcg/bcg-oranger-min.jpg);
     background-position-y: 520px;
   }
 }
