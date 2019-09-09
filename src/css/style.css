@@ -498,6 +498,10 @@ body {
   text-align: right;
 }
 
+.offer-girl__mini {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .offer::before {
     display: none;
@@ -529,7 +533,7 @@ body {
 
 @media (max-width: 900px) {
   .offer {
-    background-position-y: 500px;
+    background-position-y: 840px;
   }
   .offer-wrap {
     -webkit-box-orient: vertical;
@@ -562,17 +566,27 @@ body {
   .offer-button {
     text-align: center;
   }
+  .offer-girl__mini {
+    display: block;
+    max-width: 300px;
+    max-height: 472px;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .offer-girl__imgs {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .offer {
-    background-position-y: 535px;
+    background-position-y: 885px;
   }
 }
 
 @media (max-width: 450px) {
   .offer {
-    background-position-y: 512px;
+    background-position-y: 870px;
   }
   .offer-sale__counter {
     display: none;
@@ -588,17 +602,20 @@ body {
 
 @media (max-width: 410px) {
   .offer {
-    background-position-y: 550px;
+    background-position-y: 910px;
   }
 }
 
 @media (max-width: 370px) {
   .offer {
-    background-position-y: 595px;
+    background-position-y: 950px;
   }
 }
 
 @media (max-width: 320px) {
+  .offer {
+    background-position-y: 930px;
+  }
   .offer-sale__text {
     font-size: 66px;
   }
@@ -680,7 +697,7 @@ body {
 
 @media (max-width: 320px) {
   .about-wrap {
-    padding-bottom: 50px;
+    padding: 1px 0px;
   }
 }
 

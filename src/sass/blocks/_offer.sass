@@ -35,7 +35,6 @@
             height: 100px
             &__min
                 display: none
-            // margin-left: -40px
     &-girl
         z-index: 0
         position: absolute
@@ -73,6 +72,9 @@
         padding-top: 100px
         text-align: right
 
+.offer-girl__mini
+    display: none 
+
 @media (max-width: 1200px)
     .offer
         &::before
@@ -96,7 +98,7 @@
 
 @media (max-width: 900px)
     .offer
-        background-position-y: 500px
+        background-position-y: 840px
         &-wrap
             flex-direction: column
         &-sale
@@ -117,12 +119,23 @@
                 text-align: center
         &-button
             text-align: center 
+
+    .offer-girl
+        &__mini
+            display: block
+            max-width: 300px
+            max-height: 472px
+            margin: auto
+            padding-top: 20px
+        &__imgs
+            width: 100%
+
 @media (max-width: 480px)
     .offer
-        background-position-y: 535px
+        background-position-y: 885px
 @media (max-width: 450px)
     .offer
-        background-position-y: 512px
+        background-position-y: 870px
         &-sale
             &__counter 
                 display: none
@@ -135,17 +148,19 @@
 
 @media (max-width: 410px)
     .offer
-        background-position-y: 550px
+        background-position-y: 910px
 
 @media (max-width: 370px)
     .offer
-        background-position-y: 595px
+        background-position-y: 950px
 
 @media (max-width: 320px)
     .offer
+        background-position-y: 930px
         &-sale
             &__text
                 font-size: 66px
+
 
 
 
