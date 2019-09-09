@@ -33,6 +33,8 @@
             padding-top: 120px
             width: 380px
             height: 100px
+            &__min
+                display: none
             // margin-left: -40px
     &-girl
         z-index: 0
@@ -120,25 +122,34 @@
         background-position-y: 535px
 @media (max-width: 450px)
     .offer
-        background-position-y: 440px
+        background-position-y: 512px
         &-sale
             &__counter 
                 display: none
+                &__min
+                    display: block
+                    margin-top: 40px
+    .menu
+        &-subtitle
+            font-size: 38px
+
 @media (max-width: 410px)
     .offer
-        background-position-y: 480px
-@media (max-width: 40px)
-    .offer
-        background-position-y: 500px
-        &-sale
-            &__text
-                font-size: 48px
-        &-form
-            margin-top: 70px
+        background-position-y: 550px
+
 @media (max-width: 370px)
     .offer
-        background-image: url(../img/bcg/bcg-oranger-min.jpg)
-        background-position-y: 520px
+        background-position-y: 595px
+
+@media (max-width: 320px)
+    .offer
+        &-sale
+            &__text
+                font-size: 66px
+
+
+
+
 
 
             

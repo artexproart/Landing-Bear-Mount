@@ -260,7 +260,7 @@ body {
 }
 
 .offer {
-  background-image: url(../img/bcg/bcg-oranger.jpg);
+  background-image: url(../img/bcg/bcg-orange.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-repeat-x: repeat;
@@ -289,7 +289,7 @@ body {
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.94);
   color: #ffffff;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 37px;
   padding: 20px;
@@ -313,7 +313,6 @@ body {
   .hero-title {
     max-width: 800px;
     margin: auto;
-    font-size: 26px;
   }
   .hero-slider {
     max-width: 800px;
@@ -326,7 +325,6 @@ body {
   }
   .hero-title {
     max-width: 680px;
-    font-size: 24px;
   }
 }
 
@@ -338,19 +336,24 @@ body {
 
 @media (max-width: 500px) {
   .hero {
-    background-image: url(../img/bcg/bcg-header-mini-3.jpg);
+    background-image: url(../img/bcg/bcg-header-mini.jpg);
     min-height: 450px;
   }
   .hero-title {
     max-width: 400px;
-    font-size: 22px;
-    line-height: 30px;
+    line-height: 32px;
   }
 }
 
 @media (max-width: 320px) {
   .hero {
-    min-height: 380px;
+    min-height: 475px;
+    background-image: url(../img/bcg/bcg-header-mini-320.jpg);
+  }
+  .hero-title {
+    max-width: 300px;
+    line-height: 35px;
+    letter-spacing: 0px;
   }
 }
 
@@ -435,6 +438,10 @@ body {
   padding-top: 120px;
   width: 380px;
   height: 100px;
+}
+
+.offer-sale__counter__min {
+  display: none;
 }
 
 .offer-girl {
@@ -565,35 +572,35 @@ body {
 
 @media (max-width: 450px) {
   .offer {
-    background-position-y: 440px;
+    background-position-y: 512px;
   }
   .offer-sale__counter {
     display: none;
+  }
+  .offer-sale__counter__min {
+    display: block;
+    margin-top: 40px;
+  }
+  .menu-subtitle {
+    font-size: 38px;
   }
 }
 
 @media (max-width: 410px) {
   .offer {
-    background-position-y: 480px;
-  }
-}
-
-@media (max-width: 40px) {
-  .offer {
-    background-position-y: 500px;
-  }
-  .offer-sale__text {
-    font-size: 48px;
-  }
-  .offer-form {
-    margin-top: 70px;
+    background-position-y: 550px;
   }
 }
 
 @media (max-width: 370px) {
   .offer {
-    background-image: url(../img/bcg/bcg-oranger-min.jpg);
-    background-position-y: 520px;
+    background-position-y: 595px;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer-sale__text {
+    font-size: 66px;
   }
 }
 
@@ -669,6 +676,12 @@ body {
   color: #333333e0;
   font-size: 18px;
   margin-top: 50px;
+}
+
+@media (max-width: 320px) {
+  .about-wrap {
+    padding-bottom: 50px;
+  }
 }
 
 .wrap {
@@ -884,6 +897,10 @@ body {
   padding: 30px 0;
 }
 
+.discount-brand__counter__min {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .discount-block__right {
     max-width: 600px;
@@ -894,8 +911,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .discount-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .discount-block__right {
-    display: none;
+    padding-bottom: 30px;
   }
 }
 
@@ -911,6 +934,10 @@ body {
   .discount-brand__counter {
     display: none;
   }
+  .discount-brand__counter__min {
+    display: block;
+    margin-top: 40px;
+  }
   .discount-brand__offer {
     font-size: 36px;
   }
@@ -919,7 +946,7 @@ body {
     height: 100%;
   }
   .discount-button {
-    margin-top: 100px;
+    margin-top: 10px;
   }
 }
 
